@@ -25,7 +25,7 @@ namespace _08_EreditarietaProdotti.Models
         #region =03=== costruttori =======================ctor==
         public Alimentare(DateTime data,int codice, string descrizione, int prezzo) :base(codice,descrizione,prezzo)
         {
-            Data = data;
+            Data = new DateTime();
         }
         #endregion
 

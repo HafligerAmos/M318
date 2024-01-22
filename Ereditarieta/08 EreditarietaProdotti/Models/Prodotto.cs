@@ -28,9 +28,9 @@ namespace _08_EreditarietaProdotti.Models
             set { _descrizione = value; }
         }
 
-        private int _prezzo;
+        private float _prezzo;
 
-        public int Prezzo
+        public float Prezzo
         {
             get { return _prezzo; }
             set { _prezzo = value; }
@@ -40,7 +40,7 @@ namespace _08_EreditarietaProdotti.Models
 
         #region =03=== costruttori =======================ctor==
 
-        public Prodotto(int codice, string descrizione, int prezzo)
+        public Prodotto(int codice, string descrizione, float prezzo)
         {
             Codice = codice;
             Descrizione = descrizione;
@@ -52,10 +52,9 @@ namespace _08_EreditarietaProdotti.Models
         #endregion
 
         #region =05=== metodi public ===========================
-        public float applicaSconto()
+        public float ApplicaSconto()
         {
-            Prezzo = Prezzo / 100 * 95;
-            return Prezzo;
+            return Prezzo / 100 * 95;
         }
 
         public override string ToString()
